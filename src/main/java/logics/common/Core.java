@@ -23,6 +23,7 @@ public class Core {
     public WebDriver openApplication() {
         /*
          * To initialize web driver and open a webpage in browser
+         * checking modification
          */
         try {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + propertyReader.applicationGetProperties("driver.file.path"));
