@@ -30,7 +30,7 @@ public class Core {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get(propertyReader.applicationGetProperties("website.url"));
-            logGenerator.info("application started");
+            logGenerator.info("application is started");
             return driver;
         } catch (Exception e) {
             ExceptionHandler.handleException(e);
