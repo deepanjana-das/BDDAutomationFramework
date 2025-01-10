@@ -20,6 +20,8 @@ public class ExceptionHandler {
                     logGenerator.error(String.format("Time out Exception caught: %s", ex.getMessage()));
             case WebDriverException webDriverException ->
                     logGenerator.error(String.format("Web Driver Exception caught: %s", ex.getMessage()));
+            case WebDriverException webDriverException ->
+                    logGenerator.error(String.format("Illegel State exception: %s", ex.getMessage()));
             default -> logGenerator.error(String.format("An Unknown exception caught: %s", ex.getMessage()));
         }
     }
